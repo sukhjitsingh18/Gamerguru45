@@ -9,11 +9,8 @@
         body { background-color: #0b0f19; color: #ffffff; min-height: 100vh; padding: 10px 12px; }
         .container { max-width: 480px; margin: 0 auto; }
         
-        /* Animated Header */
-        .header { text-align: center; margin-top: 5px; margin-bottom: 10px; }
-        .header h1 {
-            font-size: 28px;
-            font-weight: 800;
+        /* Animated Gradient Text Class */
+        .animated-text {
             background: linear-gradient(90deg, #38bdf8, #c084fc, #e0e7ff, #38bdf8);
             background-size: 300% 100%;
             -webkit-background-clip: text;
@@ -25,6 +22,10 @@
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
+
+        /* Header */
+        .header { text-align: center; margin-top: 5px; margin-bottom: 10px; }
+        .header h1 { font-size: 28px; font-weight: 800; }
         .header p { font-size: 10px; letter-spacing: 1.5px; color: #8a99ad; text-transform: uppercase; margin-bottom: 10px; margin-top: 2px; }
         .badge { display: inline-block; background: rgba(0, 230, 153, 0.1); color: #00e699; font-size: 10px; font-weight: 600; padding: 4px 12px; border-radius: 20px; border: 1px solid rgba(0, 230, 153, 0.2); }
         
@@ -54,7 +55,7 @@
         /* Detail Page */
         #detail-view { display: none; }
         .back-btn { color: #94a3b8; font-size: 12px; margin-bottom: 15px; cursor: pointer; display: inline-block; }
-        .team-title { text-align: center; font-size: 20px; font-weight: 800; color: #a855f7; margin-bottom: 2px; }
+        .team-title { text-align: center; font-size: 22px; font-weight: 800; margin-bottom: 2px; }
         .team-sub { text-align: center; font-size: 10px; letter-spacing: 1px; color: #64748b; margin-bottom: 12px; }
         .download-center { text-align: center; margin-bottom: 12px; }
         .tool-title { text-align: center; font-size: 22px; font-weight: 800; margin-bottom: 4px; }
@@ -83,7 +84,7 @@
         <!-- STORE PAGE -->
         <div id="store-view">
             <div class="header">
-                <h1>Panel Stores</h1>
+                <h1 class="animated-text">Panel Stores</h1>
                 <p>YOUR APPS, ONE PLACE</p>
                 <div class="badge">• APP COLLECTION</div>
             </div>
@@ -181,7 +182,7 @@
         <div id="detail-view">
             <div class="back-btn" onclick="goBack()">← Back to Panel Stores</div>
             
-            <div class="team-title">Garena Free Fire Team</div>
+            <div class="team-title animated-text">Garena Free Fire Team</div>
             <div class="team-sub">PREMIUM GAMING EXPERIENCE</div>
             
             <div class="download-center">
@@ -219,19 +220,19 @@
                     <div class="chip">📱 Mobile Friendly</div>
                 </div>
                 
-                <a id="download-link" href="YOUR_TERABOX_LINK_HERE" class="btn-install-now" target="_blank">↓ Install Now</a>
+                <a id="download-link" href="#" class="btn-install-now" target="_blank">↓ Install Now</a>
             </div>
         </div>
     </div>
 
     <script>
         const apps = {
-            clt: { name: 'CLT Pannel', img: 'clt.png', link: 'YOUR_TERABOX_LINK_1' },
-            spacex: { name: 'Spacex Macro Pannel', img: 'spacex.png', link: 'YOUR_TERABOX_LINK_2' },
-            darkaura: { name: 'Dark Aura Pannel', img: 'dark-aura.png', link: 'YOUR_TERABOX_LINK_3' },
-            foccus: { name: 'Foccus GG Pannel', img: 'foccus.png', link: 'YOUR_TERABOX_LINK_4' },
-            naruto: { name: 'NARUTO 2 Pannel', img: 'naruto.png', link: 'YOUR_TERABOX_LINK_5' },
-            garena: { name: 'Garena Pannel', img: 'garena.png', link: 'YOUR_TERABOX_LINK_6' }
+            clt: { name: 'CLT Pannel', img: 'clt.png', link: 'https://terasharelink.com/s/15G-jjgwx1kSwcxgyoHki0A' },
+            spacex: { name: 'Spacex Macro Pannel', img: 'spacex.png', link: 'https://terasharelink.com/s/1clYCJu3X7LXzqfU1TJ8ncQ' },
+            darkaura: { name: 'Dark Aura Pannel', img: 'dark-aura.png', link: 'https://terasharelink.com/s/1clYCJu3X7LXzqfU1TJ8ncQ' },
+            foccus: { name: 'Foccus GG Pannel', img: 'foccus.png', link: 'https://terasharelink.com/s/1z0bZXRDGafrDVlLymaMBZA' },
+            naruto: { name: 'NARUTO 2 Pannel', img: 'naruto.png', link: 'https://terasharelink.com/s/1clYCJu3X7LXzqfU1TJ8ncQ' },
+            garena: { name: 'Garena Pannel', img: 'garena.png', link: 'https://terasharelink.com/s/1clYCJu3X7LXzqfU1TJ8ncQ' }
         };
 
         function openApp(id) {
